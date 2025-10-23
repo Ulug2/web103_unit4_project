@@ -1,0 +1,128 @@
+/* Save this as ExteriorModal.css */
+
+/* This is the main black container */
+.exterior-modal {
+  display: flex;
+  /* Aligns the grid and a future "DONE" button */
+  align-items: center;
+  width: 50rem;
+  
+  /* Style from the screenshot */
+  background-color: rgba(10, 10, 10, 0.9);
+  border: 2px solid #D90000; /* Bright red border */
+  border-radius: 12px;
+  padding: 24px;
+  width: 600px;
+  
+  /* Example positioning: centered */
+  /* You'll want to position this relative to your app */
+  margin: 20px auto; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* justify-content:space-between;
+  align-content: center; */
+  flex-direction: column;
+
+}
+
+/* This is the grid container for all the color swatches */
+.available-options {
+  /* display: grid; */
+  /* 5 columns, as shown in the screenshot */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 300px; /* The space between swatches */
+  
+}
+
+/* This is each individual color swatch */
+.option-card {
+  /* width: 4000px;  Square swatch size */
+  height: 150px;
+  min-width: 40px;
+  border-radius: 6px;
+  border: 2px solid #555; /* Default neutral border */
+  cursor: pointer;
+  
+  /* These are required for the overlay and transitions */
+  position: relative;
+  overflow: hidden; 
+  transition: all 0.2s ease-in-out;
+  
+  /* These are set by your component's inline style */
+  background-size: cover;
+  background-position: center;
+}
+
+/* --- Card States --- */
+
+/* Hover effect for any card */
+.option-card:hover {
+  border-color: #fff; /* White border on hover */
+  transform: scale(1.05); /* Slight zoom */
+}
+
+/* Style for the *selected* card */
+.option-card.selected {
+  border-color: #D90000; /* Red border to match modal */
+  /* Outline doesn't affect layout, perfect for a "glow" */
+  outline: 2px solid #D90000;
+  outline-offset: 2px;
+  transform: scale(1.05);
+}
+
+/* Style for *unselected* cards (when one is active) */
+.option-card.unselected {
+  opacity: 0.6;
+}
+
+.option-card.unselected:hover {
+  opacity: 1; /* Bring it to full color on hover */
+}
+
+/* Accessibility: Style for keyboard navigation */
+.option-card:focus-visible {
+  outline: 3px solid #007bff; /* Standard blue focus ring */
+  outline-offset: 2px;
+}
+
+
+/* --- Text Overlay --- */
+/*
+  Your code has a text overlay, but the screenshot doesn't.
+  A clean solution is to show this overlay on hover.
+*/
+.option-overlay {
+  position:relative;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Hide it by default by moving it down */
+  transform: translateY(100%);
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Show the overlay when the parent card is hovered */
+.option-card:hover .option-overlay {
+  transform: translateY(0);
+}
+
+.option-name {
+  font-size: 0.35rem;
+  font-weight: 500;
+  /* white-space: nowrap; */
+}
+
+.option-cost {
+  font-size: 0.8rem;
+  color: #ccc;
+  font-weight: 400;
+}

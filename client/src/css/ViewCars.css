@@ -1,0 +1,175 @@
+.cars-container {
+    width: 50rem;
+    margin: 20px auto;
+}
+
+.seperate-car {
+    background-color: black;
+    opacity: 90%;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border: 2px solid rgb(133, 5, 5);
+    transition: transform 0.3s ease;
+}
+
+.seperate-car:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 0.85rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+span {
+    font-weight: 900;
+}
+
+.details {
+    width: fit-content;
+    border: 2px solid rgb(255, 220, 220);
+    border-radius: 10px;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(141, 6, 6);
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.details:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(255, 220, 220);
+    border: 2px solid rgb(141, 6, 6);
+    color: black;
+}.cars-container {
+    width: 50rem;
+    margin: 20px auto;
+}
+
+.seperate-car {
+    background-color: black;
+    opacity: 90%;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border: 2px solid rgb(133, 5, 5);
+    transition: transform 0.3s ease;
+}
+
+.seperate-car:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 0.85rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+span {
+    font-weight: 900;
+}
+
+.details {
+    width: fit-content;
+    border: 2px solid rgb(255, 220, 220);
+    border-radius: 10px;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(141, 6, 6);
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.details:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(255, 220, 220);
+    border: 2px solid rgb(141, 6, 6);
+    color: black;
+}.cars-container {
+    width: 50rem;
+    margin: 20px auto;
+}
+
+.seperate-car {
+    background-color: black;
+    opacity: 90%;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border: 2px solid rgb(133, 5, 5);
+    transition: transform 0.3s ease;
+}
+
+.seperate-car:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 0.85rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+span {
+    font-weight: 900;
+}
+
+.details {
+    width: fit-content;
+    border: 2px solid rgb(255, 220, 220);
+    border-radius: 10px;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(141, 6, 6);
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.details:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(255, 220, 220);
+    border: 2px solid rgb(141, 6, 6);
+    color: black;
+}
